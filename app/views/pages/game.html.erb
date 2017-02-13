@@ -1,0 +1,11 @@
+<h1>Welcome to the longest word-game !</h1>
+<h2>Voici votre grille :</h2>
+<h2><%= @grid %> </h2>
+<h2> What is your best shot ? </h2>
+<form action="score">
+  <input type="text" name="word" id="word" placeholder="Enter your word">
+  <input type="hidden" value="<%= @grid %>" name="grid">
+  <input type="hidden" value="<%= @start %>" name="start">
+</form>
+
+
